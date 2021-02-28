@@ -18,7 +18,7 @@
                     <ul class="hori_list">
                         <a href="./index.html"><li class="active">about me</li></a>
                         <a href="./work.html"><li class="inactive">work</li></a>
-                        <li class="inactive">resume</li>
+                        <a href="https://drive.google.com/file/d/1NPlQ9n-TTJUltMmPl69-sdABEtU5NufR/view?usp=sharing"><li class="inactive">resume</li></a>
                     </ul>
                 </div>
                 <div class="name">
@@ -106,11 +106,13 @@
         <section class="contact container">
             <div class="quote"><p>CONSISTENCY,</p> <p>IS THE KEY IN</p><p>USER INTERFACE</p> </div>
             <div class="form">
-                <div><input class="field" type="text" name="name" id="name" placeholder="name"></div>
-                <div><input class="field" type="email" name="email" id="email" placeholder="email"></div>
-                <div><input class="field" type="number" name="mob" id="mob" placeholder="phone"></div>
-                <div><input class="field" type="text" name="msg" id="msg" placeholder="message"></div><br><br>
-                <div><input type="submit" value="Submit" name="submit" id="submit"></div>
+                <form method="post" autocomplete="off" name="google-sheet">
+                    <div><input class="field" type="text" name="name" id="name" placeholder="name"></div>
+                    <div><input class="field" type="number" name="mob" id="mob" placeholder="phone"></div>
+                    <div><input class="field" type="email" name="email" id="email" placeholder="email"></div>
+                    <div><input class="field" type="text" name="msg" id="msg" placeholder="message"></div><br><br>
+                    <div><input type="submit" value="Submit" name="submit" id="submit"></div>
+                </form>
             </div>
         </section>
         <footer>
@@ -118,5 +120,16 @@
                 <a class="footer" href="mailto:kjasveen23@gmail.com">kjasveen23@gmail.com</a>
             </div>
         </footer>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyR3x8bHHIyGJxXnTSpBoKDBvD30NtUZAw5sV2Gsio_g4E-gSg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(location.reload(),alert("Thanks for Contacting me !!"))
+              .catch(error => console.error('Error!', error.message))
+            })
+        </script>
     </body>
 </html>
