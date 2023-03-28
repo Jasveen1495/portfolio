@@ -15,7 +15,7 @@ module.exports = {
             'cybg': 'Covered By Your Grace'
          },
          columns: {
-            '2': '2 350px'
+            '2': '2 300px'
          },
          boxShadow: {
             'default': '0px 10px 20px rgba(0, 0, 0, 0.1)'

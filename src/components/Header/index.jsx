@@ -23,7 +23,7 @@ const Header = () => {
    ]
 
    return (
-      <div className='h-[10vh] px-16 flex items-center w-full'>
+      <div className={`${window.innerHeight < 850 ? "h-[13vh]" : "h-[10vh]"} px-16 flex items-center w-full`}>
          <ul className='flex'>
             {
                links.map((link, index) => {
