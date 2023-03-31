@@ -14,7 +14,7 @@ const Header = () => {
       },
       {
          title: "Resume",
-         tag: <a href="/pdf/Kushdeep Singh - Resume.pdf" target='_blank' rel='noreferrer'>Resume</a>
+         tag: <a href="/pdf/resume_Jasveen-Kaur.pdf" target='_blank' rel='noreferrer'>Resume</a>
       },
       {
          title: "/contact",

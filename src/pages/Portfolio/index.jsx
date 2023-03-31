@@ -2,7 +2,7 @@ import React from 'react'
 import Hello from '../../components/Hello'
 import ProjectCard from '../../components/ProjectCard'
 
-const Portfolio = ({ scroll }) => {
+const Portfolio = () => {
    const impProjects = [
       {
          _id: "0",

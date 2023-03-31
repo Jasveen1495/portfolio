@@ -8,7 +8,8 @@ module.exports = {
          colors: {
             priCol: "#9900fa",
             black: "#2e2e2e",
-            grey: "#505050"
+            grey: "#505050",
+            backGrey: "#F0F0F0"
          },
          fontFamily: {
             'Poppins': 'Poppins',
