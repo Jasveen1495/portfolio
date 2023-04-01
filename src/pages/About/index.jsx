@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Intro from '../../components/Intro'
 import Achievement from '../../components/Achievement'
 import Contact from '../../components/Contact'
