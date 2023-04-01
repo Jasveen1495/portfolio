@@ -32,7 +32,7 @@ const Achievement = ({ title, data }) => {
                      <h4 className='text-2xl font-medium mb-4'>Tools</h4>
                      <div className='flex flex-wrap gap-x-2 gap-y-2'>
                         {
-                           data.tools?.length !== 0 && data.tools?.map((item, index) => (
+                           data.tool?.length !== 0 && data.tool?.map((item, index) => (
                               <div key={index} className='bg-priCol capitalize text-white w-max px-5 py-1 rounded-2xl'>{item.title}</div>
                            ))
                         }
