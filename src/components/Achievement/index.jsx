@@ -22,7 +22,7 @@ const Achievement = ({ title, data }) => {
                      <h4 className='text-2xl font-medium mb-4'>Design</h4>
                      <div className='flex flex-wrap gap-x-2 gap-y-2'>
                         {
-                           data.map((item, index) => item.category === "design" && (
+                           data.design?.length !== 0 && data.design?.map((item, index) => (
                               <div key={index} className='bg-priCol capitalize text-white w-max px-5 py-1 rounded-2xl'>{item.title}</div>
                            ))
                         }
@@ -32,7 +32,7 @@ const Achievement = ({ title, data }) => {
                      <h4 className='text-2xl font-medium mb-4'>Tools</h4>
                      <div className='flex flex-wrap gap-x-2 gap-y-2'>
                         {
-                           data.map((item, index) => item.category === "tool" && (
+                           data.tools?.length !== 0 && data.tools?.map((item, index) => (
                               <div key={index} className='bg-priCol capitalize text-white w-max px-5 py-1 rounded-2xl'>{item.title}</div>
                            ))
                         }
@@ -42,7 +42,7 @@ const Achievement = ({ title, data }) => {
                      <h4 className='text-2xl font-medium mb-4'>Engineering</h4>
                      <div className='flex flex-wrap gap-x-2 gap-y-2'>
                         {
-                           data.map((item, index) => item.category === "eng" && (
+                           data.eng?.length !== 0 && data.eng?.map((item, index) => (
                               <div key={index} className='bg-priCol capitalize text-white w-max px-5 py-1 rounded-2xl'>{item.title}</div>
                            ))
                         }
