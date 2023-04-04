@@ -41,8 +41,8 @@ const About = ({ scroll = false, experiences, skills }) => {
          <div className='px-10 md:flex md:flex-col md:items-center'>
             <Intro />
             <div className='md:flex mb-10 w-full md:w-[75%] h-max gap-10'>
-               <div className='md:w-1/2 w-full mb-10 md:mb-0 min-h-full flex flex-col gap-10'>
-                  <div className='w-full h-1/2'>
+               <div className='md:w-1/2 w-full mb-10 md:mb-0 min-h-full flex flex-col'>
+                  <div className='w-full h-1/2 mb-10'>
                      <Achievement title="education" data={education} />
                   </div>
                   <div className='w-full h-1/2'>

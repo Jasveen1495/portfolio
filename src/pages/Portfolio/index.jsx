@@ -11,7 +11,7 @@ const Portfolio = ({ projects }) => {
                projects.length !== 0 && projects.map((project, index) => project.category === "imp" && <ProjectCard key={index} flexPos={index + 1} data={project} />)
             }
          </div>
-         <div className='my-5'>
+         <div className='my-5 text-center md:text-left'>
             <span className={`text-priCol text-4xl font-cybg`}>Other</span>
             <span className={`text-3xl`}> Work</span>
             <span className={`text-7xl leading-6 text-priCol`}>.</span>

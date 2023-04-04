@@ -23,11 +23,11 @@ const Header = () => {
    ]
 
    return (
-      <div className={`${window.innerHeight < 850 ? "h-[13vh]" : "h-[10vh]"} px-16 flex items-center w-full`}>
+      <div className={`${window.innerHeight < 850 ? "md:h-[13vh]" : "md:h-[10vh]"} h-[10vh] justify-center md:justify-start md:px-16 flex items-center w-full`}>
          <ul className='flex'>
             {
                links.map((link, index) => {
-                  return <li key={index} className={`mr-8 uppercase ${link.title === pathname ? 'text-priCol font-semibold' : 'text-black'}`}>{link.tag}</li>
+                  return <li key={index} className={`md:mr-8 last:mr-0 mr-5 uppercase ${link.title === pathname ? 'text-priCol font-semibold' : 'text-black'}`}>{link.tag}</li>
                })
             }
          </ul>
